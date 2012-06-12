@@ -1,0 +1,17 @@
+{
+  "name": "csp-playground",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "2.5.8",
+    "jade": ">= 0.0.1",
+    "helmet": "0.0.6"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "author": "Adam Baldwin <baldwin@andyet.net>",
+  "description": "Content Security Policy Playground"
+}
