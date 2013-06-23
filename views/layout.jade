@@ -1,6 +1,22 @@
 !!!
 html
   head
+    link(rel='stylesheet', type='text/css', href='http://current.bootstrapcdn.com/bootstrap-v204/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/css/style.css')
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body!= body
+    block head
+
+  body
+    div.navbar
+      div.navbar-inner
+        a.brand(href="/") CSP Playground
+        ul.nav
+          li
+            a(href="/policy") Edit Policy
+          li
+            a(href="/violation/edit") Violation Template
+          li
+            a(href="/violation") Test Page
+    #content
+      block content

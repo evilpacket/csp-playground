@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Edit Violation Template
+  .well.span8
+    form(action='/violation/edit', method='post')
+      - if (violation_template && violation_template !== "")
+        textarea(name='html') #{violation_template}
+      - else
+        textarea(name='html') #{example_template}
+      input.btn(type='submit')

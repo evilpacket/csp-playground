@@ -1,10 +1,7 @@
-!!!
-html
-  head
-    link(rel='stylesheet', type='text/css', href='http://current.bootstrapcdn.com/bootstrap-v204/css/bootstrap.min.css')
-    link(rel='stylesheet', type='text/css', href='/css/style.css')
-  body
-    .well.span8
-      form(action='/policy', method='post')
-        textarea(name='policy') #{policy}
-        input.btn(type='submit')
+extends layout
+block content
+  h1 Edit Policy
+  .well.span8
+    form(action='/policy', method='post')
+      textarea(name='policy') #{policy}
+      input.btn(type='submit')
