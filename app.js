@@ -5,7 +5,7 @@ var express = require('express'),
     routes = require('./routes');
 
 var data = {
-    violation_template: "",
+    template: "",
     example_template: fs.readFileSync('example_template')
 };
 
@@ -49,22 +49,22 @@ app.post('/policy', function (req, res) {
     }
 });
 
-app.get('/violation', helmet.csp(), function (req, res) {
-    if (data.violation_template) {
-        res.send(data.violation_template);
+app.get('/test', helmet.csp(), function (req, res) {
+    if (data.template) {
+        res.send(data.template);
     } else {
-        res.redirect('/violation/edit');
+        res.redirect('/template/edit');
     }
 });
 
 
-app.get('/violation/edit', function (req, res) {
-    res.render('edit_violation', data);
+app.get('/template/edit', function (req, res) {
+    res.render('edit_template', data);
 });
 
-app.post('/violation/edit', function (req, res) {
-    data.violation_template = req.body.html;
-    res.render('edit_violation', data);
+app.post('/template/edit', function (req, res) {
+    data.template = req.body.html;
+    res.render('edit_template', data);
 });
 
 app.post('/csp', function (req, res) {

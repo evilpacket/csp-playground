@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Edit Template
+  .well.span8
+    form(action='/template/edit', method='post')
+      - if (template && template !== "")
+        textarea(name='html') #{template}
+      - else
+        textarea(name='html') #{example_template}
+      input.btn(type='submit')
