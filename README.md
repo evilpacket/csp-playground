@@ -6,9 +6,12 @@ Useful for mucking about with CSP policies.
 ## How to make this go
 1. Install node.js >= v0.10.8 
 2. git clone git@github.com:evilpacket/csp-playground.git
-3. cd csp-playground
-4. npm i
-5. node app
+3.
+```
+cd csp-playground
+npm i
+node app
+```
 Which should yield a result something like
 ```
 Server running on port 3000
