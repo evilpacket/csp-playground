@@ -35,5 +35,5 @@ View your test template with the defined CSP policy.
 ## Resources
 - [Content Security Policy 1.1 Specification](https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-specification.dev.html)
 - https://developer.mozilla.org/en-US/docs/Security/CSP
-- [Helmet](github.com/evilpacket/helmet)
+- [Helmet](https://github.com/evilpacket/helmet)
 
