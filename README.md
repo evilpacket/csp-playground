@@ -23,6 +23,8 @@ Server running on port 3000
 
 ## Edit Policy
 You can use the edit policy section to modify the helmet CSP policy that's defined. 
+![](http://cl.ly/image/1k1Q1f0L2e3d/Screen%20Shot%202013-06-23%20at%202.28.08%20PM.png)
+
 
 ## Edit Template
 Modify your test case template. Add in script, images, whatever.
@@ -33,5 +35,5 @@ View your test template with the defined CSP policy.
 ## Resources
 - [Content Security Policy 1.1 Specification](https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-specification.dev.html)
 - https://developer.mozilla.org/en-US/docs/Security/CSP
-- [Helmet](github.com/evilpacket/helmet)
+- [Helmet](https://github.com/evilpacket/helmet)
 
