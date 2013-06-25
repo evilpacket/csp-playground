@@ -30,6 +30,7 @@ app.configure('production', function(){
   app.use(express.errorHandler());
 });
 
+helmet.csp.reportTo('/report');
 
 // Routes
 app.get('/', routes.index);
@@ -71,6 +72,11 @@ app.post('/csp', function (req, res) {
     console.log(req.body);
     console.log(req.headers);
     res.send('');
+});
+
+app.post('/report', function (req, res) {
+    console.log(JSON.stringify(req.body,null, 4) + "\n");
+    res.send("");
 });
 
 
